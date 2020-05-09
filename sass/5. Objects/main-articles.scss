@@ -1,0 +1,100 @@
+.main .articles {
+    width: 100%;
+}
+
+.main .articles h2 {
+    padding: 20px 0px;
+    font-weight: bold;
+    color: var(--section-title-color);
+}
+
+.main .articles .contents {
+    display: grid;
+    grid-row-gap: 30px;
+}
+
+.main .articles .contents .item {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main .articles .contents .item .left {
+    width: 40%;
+    max-width: 40%;
+}
+
+.main .articles .contents .item .left img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.main .articles .contents .item .right {
+    padding-left: 20px;
+    width: 60%;
+    max-width: 60%;
+    height: inherit;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .articles .contents .item .right h3 {
+    color: var(--card-title-color);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.main .articles .contents .item .right p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main .articles .contents .item .right footer {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.main .articles .contents .item .right footer .left {
+    width: 70%;
+    max-width: 70%;
+    font-size: 12px;
+}
+
+.main .articles .contents .item .right footer .left .autor {
+    color: var(--card-title-color);
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+.main .articles .contents .item .right footer .right {
+    width: 30%;
+    max-width: 30%;
+}
+
+.main .articles .contents .item .right footer .right .shared {
+    display: flex;
+    height: 100%;
+    max-height: 100%;
+    align-items: flex-end;
+}
+
+.main .articles .contents .item .right footer .right .shared li {
+    width: 50%;
+    max-width: 50%;
+    text-align: right;
+}
+
+.main .articles .contents .paginate {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.main .articles .contents .paginate div a {
+    text-decoration: none;
+}

@@ -1,0 +1,28 @@
+.footer {
+    width: 100%;
+    max-width: 100%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    .background {
+        position: absolute;
+        // display: flex;
+        border-radius: 0 100px 0 0;
+        background-color: #316099;
+        width: 95%;
+        height: 85%;
+        right: 0;
+        left: 0;
+        z-index: -1;
+    }
+    >p {
+        color: var(--color-white);
+        opacity: 0.4;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+@import 'footer-intersted.scss';
+@import 'footer-articles.scss';

@@ -1,0 +1,498 @@
+:root {
+  --white: white;
+  --black: black;
+  --section-title-color: #356EAD;
+  --card-title-color: #1F3F68;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-VariableFont_ital,wght.ttf") format("truetype");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost" !important;
+}
+
+.header {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+}
+.header .top {
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header .top .nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+}
+.header .top .nav ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.header .top .nav ul li a:hover {
+  color: darkblue;
+}
+.header .title {
+  align-self: flex-end;
+  width: 100%;
+  background-color: cornflowerblue;
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  text-align: center;
+  padding: 50px;
+  color: var(--white);
+}
+.header .title h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.header .title p {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  margin: auto;
+}
+
+.main .search {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.main .search input {
+  width: 100%;
+  padding: 5px;
+  background-color: #F4F4F4;
+  padding-left: 40px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.main .popular {
+  width: 100%;
+}
+.main .popular h2 {
+  padding: 20px 0px;
+  font-weight: bold;
+  color: var(--section-title-color);
+}
+.main .popular .contents {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.main .popular .contents article {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.main .popular .contents article .left {
+  order: 0;
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+.main .popular .contents article .left .title h3 {
+  color: var(--card-title-color);
+  font-weight: bold;
+  padding: 10px 0px;
+}
+.main .popular .contents article .left p {
+  line-height: 20px;
+  font-size: 13px;
+}
+.main .popular .contents article .left footer {
+  justify-items: flex-end;
+  display: flex;
+}
+.main .popular .contents article .left footer .left {
+  width: 70%;
+  max-width: 70%;
+  padding-right: 0px;
+}
+.main .popular .contents article .left footer .left .autor {
+  color: var(--card-title-color);
+  font-weight: bold;
+  padding: 10px 0px;
+  font-size: 12px;
+}
+.main .popular .contents article .left footer .left .date {
+  font-size: 12px;
+}
+.main .popular .contents article .left footer .right {
+  width: 30%;
+  max-width: 30%;
+}
+.main .popular .contents article .left footer .right .shared {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  max-height: 100%;
+}
+.main .popular .contents article .left footer .right .shared li {
+  align-self: center;
+  width: 50%;
+  max-width: 50%;
+  text-align: right;
+}
+.main .popular .contents article .right img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main .popular .contents article:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+  flex-direction: row;
+}
+.main .popular .contents article:nth-child(1) .left {
+  width: 40%;
+  max-width: 40%;
+  padding-right: 20px;
+}
+.main .popular .contents article:nth-child(1) .left h3 {
+  font-size: 32px;
+}
+.main .popular .contents article:nth-child(1) .right {
+  width: 60%;
+  max-width: 60%;
+}
+.main .popular .seemore {
+  display: flex;
+  padding: 20px 0px;
+  justify-content: flex-end;
+  font-weight: bold;
+  color: var(--section-title-color);
+  text-decoration: none;
+}
+
+.main .articles {
+  width: 100%;
+}
+
+.main .articles h2 {
+  padding: 20px 0px;
+  font-weight: bold;
+  color: var(--section-title-color);
+}
+
+.main .articles .contents {
+  display: grid;
+  grid-row-gap: 30px;
+}
+
+.main .articles .contents .item {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main .articles .contents .item .left {
+  width: 40%;
+  max-width: 40%;
+}
+
+.main .articles .contents .item .left img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+
+.main .articles .contents .item .right {
+  padding-left: 20px;
+  width: 60%;
+  max-width: 60%;
+  height: inherit;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .articles .contents .item .right h3 {
+  color: var(--card-title-color);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+.main .articles .contents .item .right p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main .articles .contents .item .right footer {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main .articles .contents .item .right footer .left {
+  width: 70%;
+  max-width: 70%;
+  font-size: 12px;
+}
+
+.main .articles .contents .item .right footer .left .autor {
+  color: var(--card-title-color);
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.main .articles .contents .item .right footer .right {
+  width: 30%;
+  max-width: 30%;
+}
+
+.main .articles .contents .item .right footer .right .shared {
+  display: flex;
+  height: 100%;
+  max-height: 100%;
+  align-items: flex-end;
+}
+
+.main .articles .contents .item .right footer .right .shared li {
+  width: 50%;
+  max-width: 50%;
+  text-align: right;
+}
+
+.main .articles .contents .paginate {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.main .articles .contents .paginate div a {
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  max-width: 100%;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+.footer .background {
+  position: absolute;
+  border-radius: 0 100px 0 0;
+  background-color: #316099;
+  width: 95%;
+  height: 85%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer > p {
+  color: var(--color-white);
+  opacity: 0.4;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.footer .intersted {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  padding: 100px 0px;
+  margin: auto;
+}
+.footer .intersted .left {
+  width: 60%;
+  height: 50%;
+}
+.footer .intersted .left h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+  width: 60%;
+  max-width: 60%;
+}
+.footer .intersted .right {
+  margin: auto 0px;
+  height: 50%;
+}
+.footer .intersted .right a {
+  background-color: #5A98D0;
+  padding: 20px 60px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.footer .articles {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .articles article h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footer .articles article ul li {
+  padding: 5px 0px;
+}
+.footer .articles article ul li a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=index.css.map */

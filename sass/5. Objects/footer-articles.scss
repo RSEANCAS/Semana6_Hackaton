@@ -1,0 +1,23 @@
+.footer {
+    .articles {
+        // background-color: #316099;
+        width: 100%;
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        article {
+            h3 {
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+            ul li {
+                padding: 5px 0px;
+                a {
+                    color: var(--color-white);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+//PATH ITCSS
+$path-settings: '1. Settings';
+$path-tools: '2. Tools';
+$path-generic: '3. Generic';
+$path-elements: '4. Elements';
+$path-objects: '5. Objects';
+$path-components: '6. Components';
+$path-utilities: '7. Utilities';
+//PATHS
+$path-image: '../images';
+$path-font: '../fonts';
+//FONTS
+$font-family: 'Jost';
+//COLORS
+$color-white: white;
+$color-black: black;
+$color-primary: black;
+$color-section-title: #356EAD;
+$color-card-title: #1F3F68;
+:root {
+    --white: #{$color-white};
+    --black: #{$color-black};
+    --section-title-color: #{$color-section-title};
+    --card-title-color: #{$color-card-title};
+}

@@ -1,0 +1,10 @@
+.main {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+}
+
+@import 'main-search.scss';
+@import 'main-popular.scss';
+@import 'main-articles.scss';
